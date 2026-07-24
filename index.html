@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ريدان ضياء عبد الباقي | E-Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --accent-green: #10b981;
+            --accent-gold: #f59e0b;
+            --accent-blue: #3b82f6;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 2rem;
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+        }
+
+        .hero-container {
+            width: 90%;
+            max-width: 1400px;
+            text-align: center;
+        }
+
+        .badge {
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--accent-green);
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--accent-green);
+            font-size: 1.1rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #38bdf8, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.subtitle {
+            font-size: 1.4rem;
+            color: var(--text-muted);
+            max-width: 1000px;
+            margin: 0 auto 3rem;
+        }
+
+        p.subtitle i { color: var(--accent-gold); }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-blue);
+        }
+
+        .stat-card i { font-size: 2.5rem; color: var(--accent-gold); margin-bottom: 1rem; }
+        .stat-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+
+        .floating-btn {
+            position: fixed;
+            bottom: 35px;
+            left: 35px;
+            background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+            color: white;
+            padding: 1.1rem 2.2rem;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 15px 35px rgba(16, 185, 129, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .hero-container { width: 96%; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+            .stat-card { padding: 1.25rem; }
+            .stat-card i { font-size: 2rem; }
+            .stat-card h3 { font-size: 1.05rem; }
+            .floating-btn { bottom: 20px; left: 20px; padding: 0.9rem 1.4rem; font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="projects.html" class="floating-btn">
+        <span>انتقل لرؤية مشاريعي</span>
+        <i class="fas fa-rocket"></i>
+    </a>
+
+    <section class="hero-section" id="intro-page">
+        <div class="hero-container">
+            <span class="badge"><i class="fas fa-school"></i> ثانوية مارون عبود الرسمية</span>
+            <h1>ريدان ضياء عبد الباقي</h1>
+            <p class="subtitle">طالب متفوق (16 سنة) | أهدف بخطى ثابته لأن أكون <strong>دكتور جراح <i class="fas fa-stethoscope"></i></strong> في المستقبل. يجمع شغفي بين مهارة تطوير المتاجر والتطبيقات الإلكترونية، عشقي للرياضيات والتحليل، واهتمامي الواسع بعالم السيارات والتكنولوجيا البيئية.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-code"></i>
+                    <h3>مطوّر وبسّاط</h3>
+                    <p>بناء المتاجر والصفحات الرقمية</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-square-root-variable"></i>
+                    <h3>شغف بالرياضيات</h3>
+                    <p>تفكير تحليلي وتفوق دراسي</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-user-doctor"></i>
+                    <h3>طبيب جراح مستقبلي</h3>
+                    <p>دقة اليد والتركيز في التفاصيل</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-car-side"></i>
+                    <h3>عالم المحركات</h3>
+                    <p>مهتم بالسيارات والحلول البيئية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
